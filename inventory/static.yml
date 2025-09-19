@@ -1,0 +1,30 @@
+---
+all:
+  children:
+    mc_server:
+    online:
+
+mc_server:
+  children:
+    beta_1_7_3:
+    release_1_21_8:
+
+beta_1_7_3:
+  hosts:
+    mc_alef:
+    mc_bet:
+    mc_gimel:
+    mc_dalet:
+
+release_1_21_8:
+  hosts:
+    mc_epsilon:
+    mc_zeta:
+    mc_eta:
+    mc_theta:
+
+online:
+  children:
+    release_1_21_8:
+  hosts:
+    mc_bet:    

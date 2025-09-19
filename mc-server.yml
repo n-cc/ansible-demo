@@ -1,0 +1,6 @@
+---
+- name: Configure Minecraft server
+  hosts: mc_server
+  roles:
+    - name: "ssh"
+    - name: "minecraft"
